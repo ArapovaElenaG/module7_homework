@@ -22,9 +22,7 @@ class Appliance {
   // Класс подкатегории приборы кухни
   class KitchenAppliance extends Appliance {
     constructor (name, power, turn) {
-      super (name);
-      this.power = power,
-      this.turn = turn,
+      super (name, power, turn);
       this.location = 'кухня'
     }
     turnOffKitchen (sumPowerKitchen) {
@@ -38,9 +36,7 @@ class Appliance {
   // Класс подкатегории приборы сан/узла
   class LaundryAppliance extends Appliance {
     constructor (name, power, turn) {
-      super (name);
-      this.power = power,
-      this.turn = turn,
+      super (name, power, turn);
       this.location = 'сан/узел'
     }
     turnOffBathroom (sumPoweBathroom) {
